@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5.0dip"
+        android:layout_marginEnd="5.0dip"
+        android:elevation="20.0dip">
+
+        <RelativeLayout
+
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                    </Space>
+
+                    <TextView
+                        android:layout_marginStart="11dp"
+                        android:id="@+id/MethodName"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="11dp"
+                        android:gravity="center_vertical"
+                        android:text="Social Media"
+                        android:textColor="#3F51B5"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Youtube_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="11dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginStart="11dp"
+                                android:src="@drawable/youtube_1"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp">
+
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center_vertical"
+                                        android:text="YouTube"
+                                        android:textColor="#000000"
+                                        android:textSize="17dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="22dp"
+                                    android:layout_marginBottom="11dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corner_1">
+
+                                    <TextView
+                                        android:id="@+id/User_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:gravity="center_vertical"
+                                        android:text="CHECK OUR YOUTUBE CHANNEL"
+                                        android:textColor="#000000"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp">
+
+                    </Space>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Linkdin_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="11dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginStart="11dp"
+                                android:src="@drawable/linkdin"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp">
+
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center_vertical"
+                                        android:text="Linkedin"
+                                        android:textColor="#000000"
+                                        android:textSize="17dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="22dp"
+                                    android:layout_marginBottom="11dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corner_1">
+
+                                    <TextView
+                                        android:id="@+id/User_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:gravity="center_vertical"
+                                        android:text="CHECK OUR LINKEDIN PROFILE"
+                                        android:textColor="#000000"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp">
+
+                    </Space>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Twitter_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="11dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginStart="11dp"
+                                android:src="@drawable/twitter"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp">
+
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center_vertical"
+                                        android:text="Twitter"
+                                        android:textColor="#000000"
+                                        android:textSize="17dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="22dp"
+                                    android:layout_marginBottom="11dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corner_1">
+
+                                    <TextView
+                                        android:id="@+id/User_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:gravity="center_vertical"
+                                        android:text="CHECK OUR TWITTER PROFILE"
+                                        android:textColor="#000000"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp">
+
+                    </Space>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Insta_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="11dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginStart="11dp"
+                                android:src="@drawable/insta"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp">
+
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center_vertical"
+                                        android:text="Instagram"
+                                        android:textColor="#000000"
+                                        android:textSize="17dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="22dp"
+                                    android:layout_marginBottom="11dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corner_1">
+
+                                    <TextView
+                                        android:id="@+id/User_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:gravity="center_vertical"
+                                        android:text="CHECK OUR INSTAGRAM PROFILE"
+                                        android:textColor="#000000"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp">
+
+                    </Space>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Facebook_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_margin="6dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="11dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginStart="11dp"
+                                android:src="@drawable/facebook"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp">
+
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center_vertical"
+                                        android:text="Facebook"
+                                        android:textColor="#000000"
+                                        android:textSize="17dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginEnd="22dp"
+                                    android:layout_marginBottom="11dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/corner_1">
+
+                                    <TextView
+                                        android:id="@+id/User_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="11dp"
+                                        android:gravity="center_vertical"
+                                        android:text="CHECK OUR FACEBOOK PROFILE"
+                                        android:textColor="#000000"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="22dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+
+                            app:cardBackgroundColor="#C4F44336"
+                            app:cardCornerRadius="11dp"
+                            app:cardElevation="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+
+                                <TextView
+                                    android:id="@+id/Sohpping"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="SHOPPING"
+                                    android:textColor="#FFFFFF">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                    </Space>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="33dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/Cancle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Close"
+                            android:textColor="#1E1E1E"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Space>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

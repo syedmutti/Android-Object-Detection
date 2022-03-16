@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/DrawerLayoutId"
+    android:layout_height="match_parent"
+    tools:context=".Web_Inside_App_Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:onClick="BackPress"
+            android:background="#FF0ABF32"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+
+            <ImageView
+                android:onClick="BackPress"
+                android:id="@+id/DrawerOpenCloseButton"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text="xray-lab"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <Space
+                android:layout_weight="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Space>
+
+
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/SwipeRefeshLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <WebView
+                android:id="@+id/WebViewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

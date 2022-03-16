@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#FF0ABF32"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:fontFamily="@font/poppins"
+            android:text="XRAY-LAB"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Space>
+
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Space>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Select Method"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/poppins"
+        android:text="Real-time"
+        android:textAllCaps="false"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/storage_prediction"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/poppins"
+        android:text="Storage"
+        android:textAllCaps="false"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="254dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/xray_logo" />
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Space>
+
+
+    <LinearLayout
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#FF0ABF32"
+            android:onClick="Open_Website"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="7dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="WEBSITE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:onClick="OpenSocialMEdia"
+           app:cardBackgroundColor="#FF0ABF32"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="7dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="FOLLOW US"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

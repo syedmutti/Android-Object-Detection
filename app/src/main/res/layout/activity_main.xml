@@ -8,14 +8,12 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="#FF0ABF32"
         android:elevation="6dp"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -30,21 +28,25 @@
             android:layout_marginStart="22dp"
             android:fontFamily="@font/poppins"
             android:text="XRAY-LAB"
+            android:layout_centerVertical="true"
             android:textColor="#FFFFFF"
             android:textSize="20dp">
 
         </TextView>
 
-        <Space
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:id="@+id/btnDemo"
+            android:text="Demo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            />
 
-        </Space>
 
 
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <Space
         android:layout_weight="1"

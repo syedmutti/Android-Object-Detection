@@ -14,6 +14,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -33,6 +36,7 @@ import com.google.android.play.core.tasks.OnSuccessListener;
 import org.opencv.android.OpenCVLoader;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     static {
@@ -47,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
     private AppUpdateManager mAppUpdateManager;
     private static  final int RC_APP_UPDATE = 100;
     private Button camera_button;
-    private Button storage_prediction;
+    private Button storage_prediction, btnDemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         // select device and run
         // we successfully loaded model
@@ -63,37 +67,29 @@ public class MainActivity extends AppCompatActivity {
         // Next tutorial will be about predicting using Interpreter
 
         camera_button=findViewById(R.id.camera_button);
-        camera_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,CameraActivity.class).addFlags(
-                        Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-            }
+        btnDemo = findViewById(R.id.btnDemo);
+
+        btnDemo.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this,SampleImagesActivity.class));
         });
+        camera_button.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,CameraActivity.class).addFlags(
+                Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
 
         storage_prediction=findViewById(R.id.storage_prediction);
-        storage_prediction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,StoragePredictionActivity.class).addFlags(
-                        Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-            }
-        });
+        storage_prediction.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,StoragePredictionActivity.class).addFlags(
+                Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
 
         mAppUpdateManager = AppUpdateManagerFactory.create(this);
-        mAppUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
-            @Override
-            public void onSuccess(AppUpdateInfo result) {
+        mAppUpdateManager.getAppUpdateInfo().addOnSuccessListener(result -> {
 
-                if(result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
-                        && result.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE))
-                {
+            if(result.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                    && result.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE))
+            {
 
-                    try {
-                        mAppUpdateManager.startUpdateFlowForResult(result, AppUpdateType.FLEXIBLE, MainActivity.this, RC_APP_UPDATE);
-                    } catch (IntentSender.SendIntentException e) {
-                        e.printStackTrace();
-                    }
+                try {
+                    mAppUpdateManager.startUpdateFlowForResult(result, AppUpdateType.FLEXIBLE, MainActivity.this, RC_APP_UPDATE);
+                } catch (IntentSender.SendIntentException e) {
+                    e.printStackTrace();
                 }
             }
         });
@@ -113,12 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
             Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "New App is ready! ",
                     Snackbar.LENGTH_INDEFINITE);
-            snackbar.setAction("Install", new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mAppUpdateManager.completeUpdate();
-                }
-            });
+            snackbar.setAction("Install", view -> mAppUpdateManager.completeUpdate());
             snackbar.show();
         }
     };
@@ -249,4 +240,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }

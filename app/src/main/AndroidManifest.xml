@@ -3,12 +3,8 @@
     package="com.example.imagepro">
 
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
-
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -30,6 +26,12 @@
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImagePro">
+        <activity
+            android:name=".SampleImagePredictionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SampleImagesActivity"
+            android:exported="true" />
         <activity
             android:name=".Web_Inside_App_Activity"
             android:exported="true" />

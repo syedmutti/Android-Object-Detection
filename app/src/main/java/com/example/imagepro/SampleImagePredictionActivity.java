@@ -45,7 +45,6 @@ public class SampleImagePredictionActivity extends AppCompatActivity {
         }
     }
 
-
     void predictInfo(int resource) {
 
         runOnUiThread(() -> {
